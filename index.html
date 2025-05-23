@@ -1,24 +1,511 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <title>인사 페이지</title>
-  <style>
-    body {
-      font-family: 'Helvetica', sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      background-color: #f0f0f0;
-    }
-    h1 {
-      font-size: 3rem;
-      color: #333;
-    }
-  </style>
-</head>
-<body>
-  <h1>반갑습니다.</h1>
-</body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800;900");
+    </style>
+
+    <title></title>
+    <!--[if (!mso)&(!ie)]>These<!-- -->
+    <!--<![endif]-->
+    <!--[if (!mso)&(!ie)]>are<!-- -->
+    <!--<![endif]-->
+    <!--[if (!mso)&(!ie)]>for<!-- -->
+    <!--<![endif]-->
+    <!--[if (!mso)&(!ie)]>outlook<!-- -->
+    <!--<![endif]-->
+    <!--[if (!mso)&(!ie)]>live<!-- -->
+    <!--<![endif]-->
+    <!--[if (!mso)&(!ie)]>that<!-- -->
+    <!--<![endif]-->
+    <!--[if (!mso)&(!ie)]>removes<!-- -->
+    <!--<![endif]-->
+    <!--[if (!mso)&(!ie)]>the first<!-- -->
+    <!--<![endif]-->
+    <!--[if (!mso)&(!ie)]>10 well-formed<!-- -->
+    <!--<![endif]-->
+    <!--[if (!mso)&(!ie)]>conditional comments<!-- -->
+    <!--<![endif]-->
+    <!--[if gte mso 9]>
+      <xml>
+        <o:OfficeDocumentSettings xmlns:o="urn:schemas-microsoft-com:office:office">
+          <o:AllowPNG />
+          <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+      </xml>
+    <![endif]-->
+
+    <style type="text/css">
+      .dark-mode .bg-fffffe {
+        background-color: #fffffe !important;
+      }
+      .dark-mode .bg-d0d5b9 {
+        background-color: #d0d5b9 !important;
+      }
+      .dark-mode .color-8e9f6f {
+        color: #8e9f6f !important;
+      }
+      .dark-mode .color-fffffe {
+        color: #fffffe !important;
+      }
+      .dark-mode .bg-e8ebd6 {
+        background-color: #e8ebd6 !important;
+      }
+      .dark-mode .color-444444 {
+        color: #444444 !important;
+      }
+      .dark-mode .bg-9aa97d {
+        background-color: #9aa97d !important;
+      }
+      .dark-mode .color-fffdfd {
+        color: #fffdfd !important;
+      }
+      .dark-mode .color-d0d5b9 {
+        color: #d0d5b9 !important;
+      }
+      .dark-mode .color-9aa97d {
+        color: #9aa97d !important;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        html:not(.light-mode) .bg-fffffe {
+          background-color: #fffffe !important;
+        }
+        html:not(.light-mode) .bg-d0d5b9 {
+          background-color: #d0d5b9 !important;
+        }
+        html:not(.light-mode) .color-8e9f6f {
+          color: #8e9f6f !important;
+        }
+        html:not(.light-mode) .color-fffffe {
+          color: #fffffe !important;
+        }
+        html:not(.light-mode) .bg-e8ebd6 {
+          background-color: #e8ebd6 !important;
+        }
+        html:not(.light-mode) .color-444444 {
+          color: #444444 !important;
+        }
+        html:not(.light-mode) .bg-9aa97d {
+          background-color: #9aa97d !important;
+        }
+        html:not(.light-mode) .color-fffdfd {
+          color: #fffdfd !important;
+        }
+        html:not(.light-mode) .color-d0d5b9 {
+          color: #d0d5b9 !important;
+        }
+        html:not(.light-mode) .color-9aa97d {
+          color: #9aa97d !important;
+        }
+      }
+
+      [data-ogsc] .bg-fffffe {
+        background-color: #fffffe !important;
+      }
+      [data-ogsc] .bg-d0d5b9 {
+        background-color: #d0d5b9 !important;
+      }
+      [data-ogsc] .color-8e9f6f {
+        color: #8e9f6f !important;
+      }
+      [data-ogsc] .color-fffffe {
+        color: #fffffe !important;
+      }
+      [data-ogsc] .bg-e8ebd6 {
+        background-color: #e8ebd6 !important;
+      }
+      [data-ogsc] .color-444444 {
+        color: #444444 !important;
+      }
+      [data-ogsc] .bg-9aa97d {
+        background-color: #9aa97d !important;
+      }
+      [data-ogsc] .color-fffdfd {
+        color: #fffdfd !important;
+      }
+      [data-ogsc] .color-d0d5b9 {
+        color: #d0d5b9 !important;
+      }
+      [data-ogsc] .color-9aa97d {
+        color: #9aa97d !important;
+      }
+    </style>
+
+    <meta name="color-scheme" content="light dark" />
+
+    <meta name="supported-color-schemes" content="light dark" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <!--[if !mso]><!-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--<![endif]-->
+
+    <meta name="x-apple-disable-message-reformatting" />
+
+    <style></style>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style type="text/css">
+      u + div .kombai-email-compat__list-with-padding-left {
+        padding-left: 0.5em !important;
+      }
+    </style>
+
+    <!--[if mso]>
+      <style type="text/css">
+        v\:* {
+          behavior: url(#default#VML);
+          display: inline-block;
+        }
+        o\:* {
+          behavior: url(#default#VML);
+          display: inline-block;
+        }
+        w\:* {
+          behavior: url(#default#VML);
+          display: inline-block;
+        }
+        .ExternalClass {
+          width: 100%;
+        }
+        table {
+          mso-table-lspace: 0pt;
+          mso-table-rspace: 0pt;
+        }
+        img {
+          -ms-interpolation-mode: bicubic;
+        }
+        .ReadMsgBody {
+          width: 100%;
+        }
+        a {
+          background: transparent !important;
+          background-color: transparent !important;
+        }
+
+        li {
+          text-align: -webkit-match-parent;
+          display: list-item;
+          text-indent: -1em;
+        }
+
+        ul,
+        ol {
+          margin-left: 1em !important;
+        }
+
+        p {
+          text-indent: 0;
+        }
+      </style>
+    <![endif]-->
+  </head>
+  <body style="margin: 0; padding: 0">
+    <div style="font-size: 0px; line-height: 1px; mso-line-height-rule: exactly; display: none; max-width: 0px; max-height: 0px; opacity: 0; overflow: hidden; mso-hide: all"></div>
+    <center lang="en" dir="ltr" style="width: 100%; table-layout: fixed; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%">
+      <table class="bg-fffffe" cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="white" width="1000.00" style="background-color: white; width: 1000px; border-spacing: 0; font-family: 'Noto Sans KR', Tahoma, sans-serif; min-width: 1000px">
+        <tr>
+          <td>
+            <table class="bg-d0d5b9" cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="#d0d5b9" width="100.00%" style="background-color: #d0d5b9; width: 100%; border-spacing: 0">
+              <tr>
+                <td valign="top" width="100.00%" style="padding-top: 84px; width: 100%; vertical-align: top">
+                  <table cellpadding="0" cellspacing="0" border="0" role="presentation" width="100.00%" style="width: 100%; border-spacing: 0">
+                    <tr>
+                      <td style="padding-bottom: 10.24px">
+                        <p class="color-8e9f6f" width="100.00%" style="font-size: 36px; font-weight: 500; letter-spacing: -1.8px; color: #8e9f6f; margin: 0; padding: 0; width: 100%; line-height: 52px; text-align: center; mso-line-height-alt: 52px"><span class="color-fffffe" style="font-size: 32px; font-weight: 500; color: white; letter-spacing: -1.8px">지구와 우리의 건강한 만남</span><span style="font-size: 36px; font-weight: 500; letter-spacing: -1.8px"> 'routinus</span><span> 25</span></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding-top: 10.24px; padding-bottom: 21.75px; padding-left: 309.43px; padding-right: 309.43px">
+                        <img src="assets/image_2b16466d.png" alt="healne’ x ‘Repeful:e’" width="380" style="max-width: initial; width: 380px; display: block" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" style="padding-top: 16px; padding-bottom: 30.77px; padding-left: 228.11px">
+                        <img src="assets/image_f07b01ba.png" alt="서울 플로깅 슬로우 러닝" width="533" style="max-width: initial; width: 533px; display: block; margin-top: -0.5px" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" style="padding-top: 16px; padding-bottom: 63px">
+                        <p width="100.00%" style="text-align: center; color: white; margin: 0; padding: 0; width: 100%">
+                          <span class="color-8e9f6f" style="font-size: 32px; font-weight: 700; color: #8e9f6f; letter-spacing: -1.92px; text-align: center">2025년 6월 5일 '환경의 날'</span><span class="color-fffffe" style="font-size: 32px; font-weight: 500; color: white; letter-spacing: -1.92px; text-align: center">을 맞이 하여 <br /></span><span class="color-8e9f6f" style="font-size: 32px; font-weight: 700; color: #8e9f6f; letter-spacing: -1.92px; text-align: center">지구 사랑</span><span style="font-size: 32px; font-weight: 700; color: #626f4a; letter-spacing: -1.92px; text-align: center"> 도심 속 플로깅 슬로우 러닝 </span>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding-top: 16px">
+                        <img src="assets/image_392b0435.png" alt="a group of people are running down a street together" width="1000" style="border: none; max-width: initial; object-fit: contain; width: 1000px; display: block" />
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table class="bg-e8ebd6" cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="#e8ebd6" width="100.00%" style="background-color: #e8ebd6; width: 100%; border-spacing: 0; margin-top: -0.5px">
+              <tr>
+                <td valign="top" width="100.00%" style="padding-top: 157.11px; padding-bottom: 133px; width: 100%; vertical-align: top">
+                  <table cellpadding="0" cellspacing="0" border="0" role="presentation" width="100.00%" style="width: 100%; border-spacing: 0">
+                    <tr>
+                      <td style="padding-bottom: 39.89px; padding-left: 100px; padding-right: 100px">
+                        <img
+                          src="assets/image_5e26d8ec.png"
+                          alt="‘환경의 날’ 할 수 있는 
+우리의 작은 실천은 무엇이 있을까요? "
+                          width="799"
+                          style="max-width: initial; width: 799px; display: block"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" style="padding-top: 16px; padding-left: 182px; padding-right: 183px">
+                        <div class="color-444444" width="100.00%" style="font-size: 28px; font-weight: 500; letter-spacing: -2.24px; text-align: left; line-height: 42px; color: #444444; mso-line-height-rule: exactly; margin: 0; padding: 0; width: 100%">
+                          <ul class="kombai-email-compat__list-with-padding-left" style="list-style-type: disc; margin: 0; padding-left: 1.5em">
+                            <li style="font-size: 28px; font-weight: 500; letter-spacing: -2.24px; text-align: left; line-height: 42px; mso-line-height-rule: exactly">대중교통 이용 하고 가까운 거리는 걸어 다니기</li>
+                            <li style="font-size: 28px; font-weight: 500; letter-spacing: -2.24px; text-align: left; line-height: 42px; mso-line-height-rule: exactly">올바른 분리배출 실천 하기</li>
+                            <li style="font-size: 28px; font-weight: 500; letter-spacing: -2.24px; text-align: left; line-height: 42px; mso-line-height-rule: exactly">일회용 컵 대신 머그컵, 텀블러 사용 하기</li>
+                            <li style="font-size: 28px; font-weight: 500; letter-spacing: -2.24px; text-align: left; line-height: 42px; mso-line-height-rule: exactly">일회용 봉투 대신 장바구니 사용 하기</li>
+                            <li style="font-size: 28px; font-weight: 500; letter-spacing: -2.24px; text-align: left; line-height: 42px; mso-line-height-rule: exactly">디지털 탄소 발자국 줄이기</li>
+                            <li><span style="font-size: 28px; font-weight: 500; letter-spacing: -2.24px; text-align: left; line-height: 42px; mso-line-height-rule: exactly">종이영수증 대신 전자 영수증</span><span> </span><span style="font-size: 28px; font-weight: 500; letter-spacing: -2.24px; text-align: left; line-height: 42px; mso-line-height-rule: exactly">으로 받기</span></li>
+                            <li style="font-size: 28px; font-weight: 700; color: #9aa97d; letter-spacing: -2.24px; text-align: left; line-height: 42px; mso-line-height-rule: exactly">6월 5일 남산 플로깅 슬로우 러닝 으로 쓰레기 줍고 달리며</li>
+                          </ul>
+                          <span style="font-size: 28px; font-weight: 700; color: #9aa97d; letter-spacing: -2.24px; text-align: left; line-height: 42px; mso-line-height-rule: exactly">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 환경 보호의 필요성 인식 하기</span>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table class="bg-9aa97d" cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="#9aa97d" width="100.00%" style="background-color: #9aa97d; padding-top: 146px; padding-bottom: 149.18px; width: 100%; border-spacing: 0; margin-top: -0.5px">
+              <tr>
+                <td valign="middle" width="100.00%" style="width: 100%; vertical-align: middle">
+                  <table cellpadding="0" cellspacing="0" border="0" role="presentation" width="100.00%" style="width: 100%; border-spacing: 0">
+                    <tr>
+                      <td style="padding-bottom: 46px; padding-left: 283px; padding-right: 283px">
+                        <table class="bg-e8ebd6" cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="#e8ebd6" width="432.00" height="60.00" style="border-radius: 20px; background-color: #e8ebd6; width: 432px; height: 60px; border-spacing: 0; border-collapse: separate">
+                          <tr>
+                            <td align="left" valign="middle" width="100.00%" height="60.00" style="padding-right: 5.17px; width: 100%; vertical-align: middle; height: 60px">
+                              <p class="color-444444" width="100.00%" style="font-size: 36px; font-weight: 600; letter-spacing: -2.16px; color: #444444; margin: 0; padding: 0; width: 100%; line-height: 33.3px; text-align: center; mso-line-height-alt: 32px"><span>6월 5일 </span><span style="font-size: 36px; font-weight: 600; color: #9aa97d; letter-spacing: -2.16px; text-align: center">'환경의 날'</span><span> 행사 일정</span></p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" style="padding-top: 16px; padding-bottom: 34.76px">
+                        <!--[if gte mso 9]> <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center" width="358.00" style="width:358.00px"> <tr> <td align="center" width="358.00" style="width:358.00px"> <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" fillcolor="#9aa97d" alt="background-image" stroke="false" style="border: 0; display: inline-block; width: 268.50pt; height: 48.00pt" src="assets/image_d6ad9e31.png"/> <v:rect alt="background-image-rectangle" fill="true" stroke="false" style="border: 0; display: inline-block; position: absolute; width: 268.50pt; height:48.00pt"> <v:fill opacity="0%" color="#FFFFFF"/> <v:textbox inset="0,0,0,0"> <div> <div style="font-size: 0;"> <![endif]-->
+                        <table background="assets/image_d6ad9e31.png" cellpadding="0" cellspacing="0" border="0" role="presentation" width="358.00" height="64.00" style="background: url('assets/image_c31ac032.png') 50% / 100% no-repeat; width: 358px; height: 64px; border-spacing: 0; margin-top: -0.5px">
+                          <tr>
+                            <td valign="top" width="100.00%" height="64.00" style="width: 100%; vertical-align: top; height: 64px">
+                              <p class="color-fffdfd" width="100.00%" style="font-size: 38px; font-weight: 700; letter-spacing: -3.04px; color: #fffdfd; margin: 0; padding: 0; width: 100%; line-height: 51.68px; text-align: center; mso-line-height-rule: exactly">스케줄 (총 60분)</p>
+                            </td>
+                          </tr>
+                        </table>
+                        <!--[if gte mso 9]> </div> </div> </v:textbox> </v:fill> </v:rect> </v:image></td></tr></table> <![endif]-->
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" style="padding-top: 16px; padding-bottom: 63.92px; padding-left: 304px">
+                        <!--[if gte mso 9]> <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" fillcolor="#9aa97d" alt="background-image" stroke="false" style="border: 0; display: inline-block; width: 298.50pt; height: 63.75pt" src="assets/image_c016c163.png"/> <v:rect alt="background-image-rectangle" fill="true" stroke="false" style="border: 0; display: inline-block; position: absolute; width: 298.50pt; height:63.75pt"> <v:fill opacity="0%" color="#FFFFFF"/> <v:textbox inset="0,0,0,0"> <div> <div style="font-size: 0;"> <![endif]-->
+                        <table background="assets/image_c016c163.png" cellpadding="0" cellspacing="0" border="0" role="presentation" width="398.00" height="85.00" style="margin: 0; background: url('assets/image_2a01fc58.png') 50% / 100% no-repeat; width: 398px; height: 85px; border-spacing: 0; margin-top: -0.5px">
+                          <tr>
+                            <td align="left" valign="top" width="100.00%" height="85.00" style="padding-right: 7.69px; width: 100%; vertical-align: top; height: 85px">
+                              <p width="100.00%" style="text-align: center; color: #444444; margin: 0; padding: 0; width: 100%">
+                                <span style="font-family: 'Brie Light', Tahoma; font-size: 36px; font-weight: 500; color: white; letter-spacing: -1.44px; text-align: center; line-height: 42px; mso-line-height-rule: exactly">healne' <br /></span><span class="color-fffffe" style="font-size: 36px; font-weight: 800; color: white; letter-spacing: -1.44px; text-align: center; line-height: 42px; mso-line-height-rule: exactly">힐레</span><span style="font-size: 36px; font-weight: 800; letter-spacing: -1.44px; text-align: center; line-height: 42px; mso-line-height-rule: exactly"> 웜업 스트레칭 </span><span class="color-fffffe" style="font-size: 36px; font-weight: 800; color: white; letter-spacing: -1.44px; text-align: center; line-height: 42px; mso-line-height-rule: exactly">(5분)</span>
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                        <!--[if gte mso 9]> </div> </div> </v:textbox> </v:fill> </v:rect> </v:image> <![endif]-->
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding-top: 16px; padding-left: 242px; padding-right: 242px">
+                        <!--[if gte mso 9]> <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" fillcolor="#9aa97d" alt="background-image" stroke="false" style="border: 0; display: inline-block; width: 387.00pt; height: 36.75pt" src="assets/image_d3b91b5b.png"/> <v:rect alt="background-image-rectangle" fill="true" stroke="false" style="border: 0; display: inline-block; position: absolute; width: 387.00pt; height:36.75pt"> <v:fill opacity="0%" color="#FFFFFF"/> <v:textbox inset="0,0,0,0"> <div> <div style="font-size: 0;"> <![endif]-->
+                        <table background="assets/image_d3b91b5b.png" cellpadding="0" cellspacing="0" border="0" role="presentation" width="516.00" height="49.00" style="background: url('assets/image_40ae8c0f.png') 50% / 100% no-repeat; width: 516px; height: 49px; border-spacing: 0; margin-top: -0.5px">
+                          <tr>
+                            <td valign="top" width="100.00%" height="49.00" style="width: 100%; vertical-align: top; height: 49px">
+                              <p class="color-444444" width="100.00%" style="font-size: 36px; font-weight: 800; letter-spacing: -1.44px; line-height: 37.62px; color: #444444; mso-line-height-rule: exactly; margin: 0; padding: 0; width: 100%; text-align: center"><span class="color-fffffe" style="font-size: 36px; font-weight: 800; color: white; letter-spacing: -1.44px; text-align: center; line-height: 42px; mso-line-height-rule: exactly">루티너스</span><span> 플로깅 슬로우 러닝</span><span style="font-size: 36px; font-weight: 800; letter-spacing: -1.44px; text-align: center; line-height: 42px; mso-line-height-rule: exactly"> </span><span class="color-fffffe" style="font-size: 36px; font-weight: 800; color: white; letter-spacing: -1.44px; text-align: center; line-height: 42px; mso-line-height-rule: exactly">(25분)</span></p>
+                            </td>
+                          </tr>
+                        </table>
+                        <!--[if gte mso 9]> </div> </div> </v:textbox> </v:fill> </v:rect> </v:image> <![endif]-->
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" style="padding-bottom: 6.15px">
+                        <p width="100.00%" style="text-align: center; color: #fffdfd; margin: 0; padding: 0; width: 100%; font-family: 'Brie Light', Tahoma">
+                          <span style="font-size: 24px; font-weight: 500; letter-spacing: 0px; text-align: center; line-height: 40px; mso-line-height-rule: exactly">1km/h ~ 6km/h </span><span style="font-family: 'Noto Sans KR', Tahoma, sans-serif; font-size: 24px; font-weight: 400; letter-spacing: -1.92px; text-align: center; line-height: 40px; mso-line-height-rule: exactly">범위의&nbsp; 플로깅 슬로우 조깅 (60분)<br />코스 내 쓰레기 줍기용 장갑 및 집게 (개인 필수 지참) </span>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" style="padding-top: 6.15px; padding-bottom: 5.5px">
+                        <img src="assets/image_217486e8.png" alt="a white arrow pointing down on a black background." width="6" style="max-width: initial; width: 6px; display: block" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" style="padding-top: 5.5px; padding-bottom: 4.5px; padding-left: 304px">
+                        <!--[if gte mso 9]> <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" fillcolor="#9aa97d" alt="background-image" stroke="false" style="border: 0; display: inline-block; width: 298.50pt; height: 63.75pt" src="assets/image_7b99a78c.png"/> <v:rect alt="background-image-rectangle" fill="true" stroke="false" style="border: 0; display: inline-block; position: absolute; width: 298.50pt; height:63.75pt"> <v:fill opacity="0%" color="#FFFFFF"/> <v:textbox inset="0,0,0,0"> <div> <div style="font-size: 0;"> <![endif]-->
+                        <table background="assets/image_7b99a78c.png" cellpadding="0" cellspacing="0" border="0" role="presentation" width="398.00" height="85.00" style="margin: 0; background: url('assets/image_c8ab06d2.png') 50% / 100% no-repeat; width: 398px; height: 85px; border-spacing: 0; margin-top: -0.5px">
+                          <tr>
+                            <td align="left" valign="top" width="100.00%" height="85.00" style="padding-right: 7.69px; width: 100%; vertical-align: top; height: 85px">
+                              <p width="100.00%" style="text-align: center; color: #444444; margin: 0; padding: 0; width: 100%">
+                                <span style="font-family: 'Brie Light', Tahoma; font-size: 36px; font-weight: 500; color: white; letter-spacing: -1.44px; text-align: center; line-height: 42px; mso-line-height-rule: exactly"> healne'</span><span style="font-family: 'Brie Light', Tahoma; font-size: 36px; font-weight: 500; letter-spacing: -1.44px; text-align: center; line-height: 42px; mso-line-height-rule: exactly"> <br /></span><span class="color-fffffe" style="font-size: 36px; font-weight: 800; color: white; letter-spacing: -1.44px; text-align: center; line-height: 42px; mso-line-height-rule: exactly">힐네</span><span style="font-size: 36px; font-weight: 800; letter-spacing: -1.44px; text-align: center; line-height: 42px; mso-line-height-rule: exactly">&nbsp; 릴렉싱 쿨다운 </span><span class="color-fffffe" style="font-size: 36px; font-weight: 800; color: white; letter-spacing: -1.44px; text-align: center; line-height: 42px; mso-line-height-rule: exactly">(5분)</span>
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                        <!--[if gte mso 9]> </div> </div> </v:textbox> </v:fill> </v:rect> </v:image> <![endif]-->
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding-top: 4.5px; padding-bottom: 7px; padding-left: 288px; padding-right: 288px">
+                        <!--[if gte mso 9]> <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" fillcolor="#9aa97d" alt="background-image" stroke="false" style="border: 0; display: inline-block; width: 318.00pt; height: 105.75pt" src="assets/image_8193e067.png"/> <v:rect alt="background-image-rectangle" fill="true" stroke="false" style="border: 0; display: inline-block; position: absolute; width: 318.00pt; height:105.75pt"> <v:fill opacity="0%" color="#FFFFFF"/> <v:textbox inset="0,0,0,0"> <div> <div style="font-size: 0;"> <![endif]-->
+                        <table background="assets/image_8193e067.png" cellpadding="0" cellspacing="0" border="0" role="presentation" width="424.00" height="141.00" style="background: url('assets/image_bbf45d0c.png') 50% / 100% no-repeat; width: 424px; height: 141px; border-spacing: 0; margin-top: -0.5px">
+                          <tr>
+                            <td valign="top" width="100.00%" height="98.00" style="padding-top: 43px; width: 100%; vertical-align: top; height: 98px">
+                              <p width="100.00%" style="text-align: center; color: #444444; margin: 0; padding: 0; width: 100%">
+                                <span style="font-family: 'Brie Light', Tahoma; font-size: 36px; font-weight: 500; color: white; letter-spacing: -1.44px; text-align: center; line-height: 42px; mso-line-height-rule: exactly">Repeful:e</span><span class="color-fffffe" style="font-size: 36px; font-weight: 800; color: white; letter-spacing: -1.44px; text-align: center; line-height: 42px; mso-line-height-rule: exactly"> <br />리피풀</span><span style="font-size: 36px; font-weight: 800; letter-spacing: -1.44px; text-align: center; line-height: 42px; mso-line-height-rule: exactly"> 라이프 티타임 </span><span class="color-fffffe" style="font-size: 36px; font-weight: 800; color: white; letter-spacing: -1.44px; text-align: center; line-height: 42px; mso-line-height-rule: exactly">(25분)</span>
+                              </p>
+                            </td>
+                          </tr>
+                        </table>
+                        <!--[if gte mso 9]> </div> </div> </v:textbox> </v:fill> </v:rect> </v:image> <![endif]-->
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" style="padding-top: 7px">
+                        <img src="assets/image_488e8427.png" alt="a white arrow pointing down on a black background." width="6" style="max-width: initial; width: 6px; display: block; margin-top: -0.5px" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" style="padding-left: 212.91px; padding-right: 218.09px">
+                        <p width="100.00%" style="text-align: center; color: #d0d5b9; margin: 0; padding: 0; width: 100%">
+                          <span class="color-d0d5b9" style="font-size: 24px; font-weight: 700; color: #d0d5b9; letter-spacing: -1.92px; text-align: center; line-height: 32px; mso-line-height-rule: exactly">장소&nbsp; : 서울 남산 도심 속 플로깅 슬로우 러닝 <br />일시&nbsp; :&nbsp; 2025년 6월 5일 오후 7시 - 8시 까지 (약 60분) <br /><br /></span><span style="font-size: 24px; font-weight: 700; color: white; letter-spacing: -1.92px; text-align: center; line-height: 32px; mso-line-height-rule: exactly">주최 : 힐레, 리피풀&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 주관&nbsp; : 루티너스 25 </span>
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table class="bg-d0d5b9" cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="#d0d5b9" width="100.00%" style="background-color: #d0d5b9; width: 100%; border-spacing: 0; margin-top: -0.5px">
+              <tr>
+                <td valign="top" width="100.00%" style="padding-top: 129px; padding-bottom: 122px; width: 100%; vertical-align: top">
+                  <table cellpadding="0" cellspacing="0" border="0" role="presentation" width="100.00%" style="width: 100%; border-spacing: 0">
+                    <tr>
+                      <td align="center" style="padding-bottom: 55.64px">
+                        <table class="bg-9aa97d" cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="#9aa97d" width="220.00" height="60.00" style="border-radius: 20px; background-color: #9aa97d; width: 220px; height: 60px; border-spacing: 0; border-collapse: separate">
+                          <tr>
+                            <td valign="top" width="100.00%" height="56.00" style="padding-top: 4px; width: 100%; vertical-align: top; height: 56px">
+                              <p class="color-fffffe" width="100.00%" style="font-size: 36px; font-weight: 600; letter-spacing: -0.72px; color: white; margin: 0; padding: 0; width: 100%; line-height: 45.13px; text-align: center; mso-line-height-alt: 44px">참여 이벤트</p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding-top: 16px; padding-bottom: 12.68px; padding-left: 107.43px; padding-right: 107.43px">
+                        <img src="assets/image_4627286.png" alt="가장 창의적인 ‘환경 보호 줍깅  사진' 인증 IG 이벤트" width="783" style="max-width: initial; width: 783px; display: block; margin-top: -0.5px" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" style="padding-top: 12.68px; padding-bottom: 16px; padding-left: 235px">
+                        <!--[if gte mso 9]> <v:image xmlns:v="urn:schemas-microsoft-com:vml" fill="true" fillcolor="#d0d5b9" alt="background-image" stroke="false" style="border: 0; display: inline-block; width: 418.50pt; height: 299.25pt" src="assets/image_3a8b89d4.png"/> <v:rect alt="background-image-rectangle" fill="true" stroke="false" style="border: 0; display: inline-block; position: absolute; width: 418.50pt; height:299.25pt"> <v:fill opacity="0%" color="#FFFFFF"/> <v:textbox inset="0,0,0,0"> <div> <div style="font-size: 0;"> <![endif]-->
+                        <table background="assets/image_3a8b89d4.png" cellpadding="0" cellspacing="0" border="0" role="presentation" width="558.00" height="399.00" style="margin: 0; background: url('assets/image_618772a1.png') 50% / 100% no-repeat; width: 558px; height: 399px; border-spacing: 0; margin-top: -0.5px">
+                          <tr>
+                            <td align="left" valign="top" height="50.00" style="padding-top: 349px; padding-left: 22.48px; vertical-align: top; height: 50px; mso-padding-left-alt: 0; margin-left: 22.48px">
+                              <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="margin: 0; border-spacing: 0">
+                                <tr>
+                                  <td width="41" style="padding-right: 245px; width: 41px">
+                                    <p class="color-9aa97d" width="100.00%" style="font-size: 26px; font-weight: 900; letter-spacing: -1.04px; color: #9aa97d; margin: 0; padding: 0; width: 100%; line-height: 38px; text-align: center; mso-line-height-rule: exactly">1등</p>
+                                  </td>
+                                  <td width="41" style="padding-left: 8px; width: 41px; mso-padding-left-alt: 0; margin-left: 8px">
+                                    <p class="color-9aa97d" width="100.00%" style="font-size: 26px; font-weight: 900; letter-spacing: -1.04px; color: #9aa97d; margin: 0; padding: 0; width: 100%; line-height: 38px; text-align: center; mso-line-height-rule: exactly">2등</p>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                        <!--[if gte mso 9]> </div> </div> </v:textbox> </v:fill> </v:rect> </v:image> <![endif]-->
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding-top: 16px">
+                        <p class="color-444444" width="100.00%" style="font-size: 30px; font-weight: 400; letter-spacing: -1.2px; color: #444444; margin: 0; padding: 0; width: 100%; line-height: 43px; text-align: center; mso-line-height-alt: 44px">소정의 상품을 추첨을 통하여 제품을&nbsp; 제공됩니다.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <table class="bg-e8ebd6" cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="#e8ebd6" width="100.00%" style="background-color: #e8ebd6; width: 100%; border-spacing: 0; margin-top: -0.5px">
+              <tr>
+                <td valign="top" width="100.00%" style="padding-top: 147px; padding-bottom: 119px; width: 100%; vertical-align: top">
+                  <table cellpadding="0" cellspacing="0" border="0" role="presentation" width="100.00%" style="width: 100%; border-spacing: 0">
+                    <tr>
+                      <td align="center" style="padding-bottom: 44px">
+                        <table class="bg-9aa97d" cellpadding="0" cellspacing="0" border="0" role="presentation" bgcolor="#9aa97d" width="220.00" height="60.00" style="border-radius: 20px; background-color: #9aa97d; width: 220px; height: 60px; border-spacing: 0; border-collapse: separate">
+                          <tr>
+                            <td valign="top" width="100.00%" height="57.00" style="padding-top: 3px; width: 100%; vertical-align: top; height: 57px">
+                              <p class="color-fffffe" width="100.00%" style="font-size: 36px; font-weight: 600; letter-spacing: -0.72px; color: white; margin: 0; padding: 0; width: 100%; line-height: 45.13px; text-align: center; mso-line-height-alt: 44px">참여 방법</p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" style="padding-top: 16px; padding-bottom: 51.34px">
+                        <p class="color-444444" width="100.00%" style="font-size: 28px; font-weight: 700; letter-spacing: -2.24px; text-align: center; line-height: 52px; color: #444444; mso-line-height-rule: exactly; margin: 0; padding: 0; width: 100%">
+                          <span>(1) 개인 설문지 작성 </span><span style="font-size: 28px; font-weight: 400; letter-spacing: -2.24px; text-align: center; line-height: 52px; mso-line-height-rule: exactly">(사전 &amp; 현장)<br /></span><span>(2) IG 인스타 팔로우 </span><span style="font-size: 28px; font-weight: 400; letter-spacing: -2.24px; text-align: center; line-height: 52px; mso-line-height-rule: exactly">(사전 &amp; 현장 ) </span><span>@routinus 25<br />(3) # 해쉬태그 및 릴스 또는 사진 업로드&nbsp; 후 운영진 확인 후 럭키 넘버 부여 받기 </span><span style="font-size: 28px; font-weight: 400; letter-spacing: -2.24px; text-align: center; line-height: 52px; mso-line-height-rule: exactly"> (현장)</span>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="left" style="padding-top: 16px; padding-left: 75px">
+                        <table cellpadding="0" cellspacing="0" border="0" role="presentation" style="margin: 0; border-spacing: 0">
+                          <tr>
+                            <td style="padding-right: 16px">
+                              <img src="assets/image_884ea0f7.png" alt="a woman is sitting at a table writing on a clipboard" width="264" style="max-width: initial; width: 264px; display: block" />
+                            </td>
+                            <td style="padding-left: 8px; padding-right: 16px">
+                              <img src="assets/image_872b974e.png" alt="a group of people are looking at an apple phone" width="264" style="max-width: initial; object-fit: contain; width: 264px; clip-path: path('M0,0h264v399h-264z'); display: block" />
+                            </td>
+                            <td style="padding-left: 8px">
+                              <img src="assets/image_defe4c4b.png" alt="two men are laughing while looking at an apple phone" width="264" style="max-width: initial; object-fit: contain; width: 264px; clip-path: path('M0,0h264v399h-264z'); display: block" />
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </center>
+  </body>
 </html>
